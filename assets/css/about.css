@@ -1,0 +1,17 @@
+.about{
+    box-shadow: inset 0 0 0 100vw rgba(33, 33, 50, 0.821);
+    /* Basic background styles */
+    background:url(../image/signupbanner.png) center center no-repeat;
+    background-size: cover;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.about_info {
+    padding-top: 10rem;
+}
+.about_info p{
+    margin-top: 1rem;
+}
