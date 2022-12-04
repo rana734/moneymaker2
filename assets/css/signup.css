@@ -1,0 +1,81 @@
+/* signup main container */
+.signup{
+    box-shadow: inset 0 0 0 100vw rgba(33, 33, 50, 0.821);
+    /* Basic background styles */
+    background:url(../image/signupbanner.png) center center no-repeat;
+    background-size: cover;
+  
+    /* Here's the same styles we applied to our content-div earlier */
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftside_signup{
+    margin-top: 30rem;
+}
+
+.signup_name_field{
+    display: flex;
+    justify-content: space-between;
+}
+.name_container input{
+    max-width:10rem;
+}
+
+.payment_select{
+    width: 100%;
+    background-color: #6E4E1F;
+    border: none;
+    border-radius: .5rem;
+    padding: 9px;
+    color: var(--textColor);
+    outline: none;
+    font-weight: 100;  
+}
+.payment_select option{
+    padding-left: 1rem; 
+}
+
+.payment_select_container{
+    position: relative;
+}
+.arrow_icon{
+    position: absolute;
+    top: 15px;
+    right: 14px
+}
+
+.checkbox_container .agreement{
+    display: inline;
+    padding-left: 1rem;
+    color: var(--textColor) 
+}
+
+
+.leftside_signin_info h3{
+    font-size: 2.7rem;
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width:767px){
+    .leftside_signup{
+        margin: 10rem auto 3rem;
+    }
+    
+.leftside_signin_info h3{
+    font-size: 1.6rem;
+}
+
+.name_container input{
+    max-width:7rem;
+}
+}
+@media only screen and (max-width: 435px){
+    .name_container input{
+        /* max-width:8rem; */
+    }
+}

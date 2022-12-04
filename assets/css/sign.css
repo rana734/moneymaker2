@@ -1,0 +1,253 @@
+.signin {
+    background-color: #060C16;
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signin::after {
+    content: " ";
+    position: absolute;
+    background: url(../image/sign-in-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 20%;
+}
+
+/* signin main div */
+.signin_container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+/* left side main div */
+.leftside_signin {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.leftside_signin h3 {
+    color: var(--textColor);
+    font-weight: 200;
+    line-height: 3rem;
+    font-size: 2.5rem;
+}
+
+.leftside_signin_info p {
+    max-width: 400px;
+    margin-top: .7rem;
+}
+
+.highlight_text {
+    font-weight: 700;
+    color: var(--primaryColor);
+}
+
+.deamtext {
+    color: var(--textColor);
+    opacity: 50%;
+}
+
+/* right side div */
+.rightside_signin {
+    width: 450px;
+    background: rgba(143, 147, 161, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(17.6px);
+    -webkit-backdrop-filter: blur(17.6px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 7rem 0 3rem;
+}
+
+.right_signin_info {
+    margin: 2rem 0;
+}
+
+.highlight_text a {
+    color: var(--primaryColor);
+}
+
+.right_signin_info h3 {
+    color: var(--textColor);
+    font-size: 1.1rem;
+    font-weight: 900;
+
+}
+
+.sign_in_container {
+    width: 80%;
+    margin: 1rem auto;
+    padding-bottom: 1.5rem;
+}
+
+.signin_input_container {
+    margin-bottom: .7rem;
+}
+
+.signin_input_container label {
+    color: var(--textColor);
+    font-size: .8rem;
+}
+
+.emailinput {
+    width: 100%;
+    background-color: rgb(255, 159, 28, 0.4);
+    border: none;
+    border-radius: .5rem;
+    height: 2.4rem;
+    padding: 16px;
+    color: var(--textColor);
+    font-weight: 100;
+    outline: none;
+    font-size: 16px;
+}
+
+.emailinput::placeholder {
+    color: var(--textColor);
+    opacity: 50%;
+}
+
+.signin_password {
+    position: relative;
+}
+
+.eye_icon {
+    position: absolute;
+    right: 16px;
+    margin-top: 11px;
+}
+
+.forget_pass {
+    position: absolute;
+    bottom: -1.4rem;
+    right: 0;
+    font-size: 15px;
+}
+
+.forget_pass a {
+    color: var(--secondaryText);
+    opacity: 70%;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.login_btn {
+    display: block;
+    width: 100%;
+    padding: .7rem;
+    background-color: var(--primaryColor);
+    border: none;
+    border-radius: 10px;
+    margin-top: 4rem;
+    font-weight: 700;
+    transition: all .3s linear;
+}
+.login_btn:hover{
+    background-color: var(--textColor);
+    transition: all .3s linear;
+}
+.rightside_signin .or {
+    text-align: center;
+    color: var(--textColor);
+    margin: 1rem 0;
+}
+
+.social_icon_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.social_icon {
+    background: var(--primaryColor);
+    padding: 16px 17px;
+    margin: 0 .7rem;
+    border-radius: 50%;
+    display: block;
+    transition: all .3s linear;
+}
+.social_icon a:nth-child(2) img {
+    padding: 17px 22px;
+} a:nth-child(2) img {
+    padding: 17px 22px;
+}
+.social_icon:hover{
+    background-color: var(--textColor);
+    transition: all .3s linear;
+}
+/* responsive */
+@media only screen and (min-width: 320px) and (max-width:424px) {
+
+    .leftside_signin h3 {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    .leftside_signin {
+        margin-bottom: 3rem;
+    }
+
+    .signin_container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .rightside_signin {
+        max-width: 290px;
+        margin: 0 auto;
+    }
+
+
+}
+
+@media only screen and (min-width: 425px) and (max-width:480px) {
+
+    .leftside_signin h3 {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    .leftside_signin {
+        margin-bottom: 3rem;
+    }
+
+    .signin_container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .rightside_signin {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width:767px) {
+    .signin_container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .leftside_signin {
+        margin: 0 auto 5rem;
+    }
+
+    .rightside_signin {
+        max-width: 420px;
+        margin: auto;
+    }
+}
